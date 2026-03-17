@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Subtitle Blocker</title>
+  <link rel="stylesheet" type="text/css" href="popup.css">
+</head>
+<body>
+  <div class="header">
+    <h1>字幕遮挡</h1>
+    <label class="switch">
+      <input type="checkbox" id="toggle-switch">
+      <span class="slider round"></span>
+    </label>
+  </div>
+  <div id="controls">
+    <p>开启后，页面会出现一个可拖动的遮罩层。拖动中间可移动位置，拖动四边可调整大小。调整完成后建议打开“锁定尺寸”，避免误触。全屏模式当前优先支持主流媒体网站。</p>
+
+    <div class="lock-row">
+      <span class="lock-label">锁定尺寸</span>
+      <label class="switch">
+        <input type="checkbox" id="lock-resize">
+        <span class="slider round"></span>
+      </label>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
